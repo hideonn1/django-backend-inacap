@@ -1,3 +1,15 @@
+html, body {
+    margin: 0;
+    min-height: 100vh;
+}
+.sitio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sitio-contenido {
+    flex: 1 0 auto;
+}
 h1{
     text-align: center;
 }
@@ -10,4 +22,25 @@ hr{
 }
 .card{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.buscador{
+    max-width: 640px;
+    margin: 0 auto;
+}
+.buscador label{
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 16px 0;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    z-index: 1030;
 }
