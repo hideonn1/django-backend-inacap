@@ -1,3 +1,33 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block content %}{% endblock %}
+{% block content %}
+<div class="container mt-5 mb-4">
+    <div id="carouselPanoramas" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselPanoramas" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselPanoramas" data-slide-to="1"></li>
+            <li data-target="#carouselPanoramas" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/ford-mustang.avif' %}" class="d-block w-100" alt="Ford Mustang">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/alita-combat-angel.jpg' %}" class="d-block w-100" alt="Alita: Ángel de Combate">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/saving-private-ryan.jpg' %}" class="d-block w-100" alt="Rescatando al soldado Ryan">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselPanoramas" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselPanoramas" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
+{% endblock %}

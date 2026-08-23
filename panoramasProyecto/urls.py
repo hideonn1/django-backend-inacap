@@ -24,4 +24,5 @@ urlpatterns = [
     path('vehiculos/', views.vehiculos, name='vehiculos'),
     path('peliculas/', views.peliculas, name='peliculas'),
     path('libros/', views.libros, name='libros'),
+    path('<str:categoria>/<str:item_id>/', views.detalle, name='detalle'),
 ]
